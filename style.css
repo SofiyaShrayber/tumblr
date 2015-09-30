@@ -1,0 +1,362 @@
+body{
+    color:{color:Text Color};
+}
+
+.slider_overlay{
+    background:{color:Slider Overlay Background Color};
+}
+
+#arrow_left,
+#arrow_right{
+    color:{color:Slider Arrows Color};
+    text-shadow:1px 1px {color:Slider Arrows Shadow Color};
+}
+
+#arrow_left:hover,
+#arrow_right:hover{
+	color: {color:Slider Arrows Hover Color};
+}
+
+.navbar{
+	background: {color:Menu Background Color};
+}
+
+.main_menu li{
+	border-right: 1px solid {color:Menu Items Border Right Color};
+}
+
+.main_menu li a{
+	color: {color:Menu Items Text Color} !important;
+}
+
+.main_menu li a:hover{
+	color: {color:Menu Items Hover Text Color} !important;
+	background: {color:Menu Items Hover Background Color} !important;
+}
+
+.navbar-nav>.open>a{
+	background: {color:Menu Items Active Background Color} !important;
+	color: {color:Menu Items Active Color} !important;
+}
+
+.main_menu .dropdown-menu>li>a{
+	color: {color:Menu Items Dropdown Text Color} !important;
+}
+
+.main_menu .dropdown-menu>li>a:hover{
+	color: {color:Menu Items Dropdown Item Hover Text Color} !important;
+	background: {color:Menu Items Dropdown Item Hover Background Color} !important;
+}
+
+.search_form_menu input{
+	border: 1px solid {color:Search Form Input Border Color};
+}
+
+.in-slide-content {
+	color:{color:Slider Caption Text Color};
+	border-bottom:1px solid {color:Slider Caption Border Bottom Color};
+}
+
+.slider_more{
+	background: {color:Slider More Button Background Color};
+	color: {color:Slider More Button Text Color};
+}
+
+.slider_more:hover{
+	background: {color:Slider More Button Hover Background Color};
+}
+
+.call_to_action{
+	background: {color:Call To Action Background Color};
+	color: {color:Call To Action Text Color};
+}
+
+.call_to_action .button a{
+	border: 2px solid {color:Call To Action Button Border Color};
+	background: {color:Call To Action Button Background Color};
+	color:{color:Call To Action Button Text Color};
+}
+
+.call_to_action .button a:hover{
+	background: {color:Call To Action Button Hover Background Color};
+	border: 2px solid {color:Call To Action Button Hover Border Color};
+	color:{color:Call To Action Button Hover Text Color};
+}
+
+.parallax_item.parallax_above_about{
+    color:{color:Parallax Above About Text Color};
+}
+
+.parallax_item.parallax_above_portfolio{
+    color:{color:Parallax Above Portfolio Text Color};
+}
+
+.parallax_item.parallax_above_tweets{
+    color:{color:Parallax Above Tweets Text Color};
+}
+
+.portfolio_items .item.quote blockquote{
+	background: {color:Quote Background Color};
+	color: {color:Quote Text Color};
+}
+
+.pagination a,
+.pagination span{
+	background: {color:Pagination Links Background Color};
+	border-bottom: 1px solid {color:Pagination Links Border Bottom Color};
+	box-shadow: 0 1px 2px 0 {color:Pagination Links Box Shadow Color};
+	color: {color:Pagination Links Text Color};
+}
+
+.pagination span,
+.pagination a:hover{
+	background: {color:Pagination Links Hover Background Color};
+	border: 1px solid {color:Pagination Links Hover Border Color};
+	color: {color:Pagination Links Hover Text Color};
+}
+
+.posts_divider{
+	border-bottom: 1px solid {color:Posts Divider Border Bottom Color};
+}
+
+.team_members .member .overlay{
+	background: {color:Team Member Overlay Background Color};
+	color: {color:Team Member Overlay Text Color};
+}
+
+.team_members .member .overlay a{
+	background: {color:Team Member Overlay Buttons Background Color};
+	color: {color:Team Member Overlay Buttons Text Color};
+}
+
+.team_members .member .overlay a:hover{
+	background: {color:Team Member Overlay Buttons Hover Background Color};
+}
+
+.team_members .member .details{
+	background: {color:Team Member Details Background Color};
+	color: {color:Team Member Details Text Color};
+}
+
+.tweets_box{
+	color:{color:Tweets Box Text Color};
+}
+
+.tweets_feed .tweet a{
+	color: {color:Tweets Box Links Text Color};
+}
+
+.tweets_feed .owl-controls .owl-page span{
+	background:{color:Tweets Box Pagination Background Color} !important;
+}
+
+.scroll_to_top{
+	background: {color:Scroll To Top Button Background Color};
+	color: {color:Scroll To Top Button Text Color};
+}
+
+.scroll_to_top:hover{
+    background: {color:Scroll To Top Button Hover Background Color};
+}
+
+.footer .top{
+	color: {color:Footer Top Text Color};
+}
+
+.footer .bottom{
+	background: {color:Footer Bottom Background Color};
+	color: {color:Footer Bottom Text Color};
+}
+
+.footer .bottom .icons a{
+	color:{color:Footer Icons Color};
+}
+
+.search_page_title{
+	color: {color:Search Page Title Text Color};
+}
+
+.box_block > .title{
+	border-bottom: 4px double {color:Title Border Color};
+}
+
+.box_block > .title span{
+	text-shadow: 2px 2px 0px {color:Title Text Shadow Color};
+    color: {color:Title Text Color};
+}
+
+.services .items .item .icon{
+	color:{color:Services Icon Text Color};
+}
+
+.services .items .item .icon i {
+	border: 1px solid {color:Services Icon Border Color};
+	background: {color:Services Icon Background Color};
+	box-shadow: 0 2px 1px {color:Services Icon Box Shadow Inset Color} inset, 0 2px 1px {color:Services Icon Box Shadow Color};
+}
+
+.services .items .item:hover .icon i {
+	border: 1px solid {color:Services Icon Hover Border Color};
+}
+
+.services .items .item:hover .icon{
+	color:{color:Services Icon Hover Text Color};
+}
+
+.portfolio_items.grid .item{
+	border-bottom: 1px solid {color:Portfolio Item Border Bottom Color};
+	box-shadow: 0 1px 2px 0 {color:Portfolio Item Box Shadow Color};
+    color:{color:Portfolio Item Text Color};
+    background: {color:Portfolio Item Background Color};
+}
+
+.infinite_scroll a{
+	border-bottom: 1px solid {color:Infinite Scroll Border Bottom Color};
+	box-shadow: 0 1px 2px 0 {color:Infinite Scroll Box Shadow Color};
+    color:{color:Infinite Scroll Text Color};
+    background: {color:Infinite Scroll Background Color};
+}
+
+.infinite_scroll a:hover{
+	color:{color:Infinite Scroll Hover Text Color};
+}
+
+.portfolio_items.grid .item .overlay{
+	background: {color:Portfolio Item Overlay Background Color};
+	color: {color:Portfolio Item Overlay Text Color};
+}
+
+.portfolio_items.grid .item .overlay .icon i{
+	color: {color:Portfolio Item Overlay Icon Color};
+}
+
+.portfolio_items .item .share_btn,
+.portfolio_items .item .share_btns a{
+	color: {color:Portfolio Item Overlay Share Button Color};
+}
+
+.portfolio_items.list .item .share_btn:hover{
+	color:{color:Portfolio Item Overlay Share Button Hover List Color};
+}
+
+.portfolio_items.grid .item .share_btn:hover{
+	color:{color:Portfolio Item Overlay Share Button Hover Grid Color};
+}
+
+.portfolio_items.grid .item:hover .overlay{
+	box-shadow: 0 0 0 4px {color:Portfolio Item Box Shadow Color} inset;
+}
+
+.portfolio_items .item .chat li .label{
+	color: {color:Chat Name Color};
+}
+
+.portfolio_items .item .tags li a{
+	color: {color:Tags Text Color};
+}
+
+.portfolio_items .item .date_posted a{
+    color: {color:Date Posted Text Color};
+}
+
+.portfolio_items .item .notes_count{
+    color: {color:Notes Count Text Color};
+}
+
+.about_us_box,
+.about_us_box .title span{
+    background:{color:About Us Background Color};
+}
+
+.box_block > .title span{
+    background:{color:About Us Background Color};
+    color:{color:About Us Title Color};
+}
+
+.services_box,
+.services_box .title span{
+    background:{color:Services Background Color};
+}
+
+.services_box > .title span{
+    background:{color:Services Background Color};
+    color:{color:Services Title Color};
+}
+
+.services .items .item .title{
+    color:{color:Services Item Title Color};
+}
+
+.services .items .item .text{
+    color:{color:Services Item Text Color};   
+}
+
+.content_posts{
+    background:{color:Portfolio Background Color};
+}
+
+.portfolio_title > .title span{
+    background:{color:Portfolio Background Color};
+    color:{color:Portfolio Title Text Color};
+}
+
+.clients_box{
+    background:{color:Clients Background Color};
+}
+
+.clients_box .title span{
+    background:{color:Clients Background Color};
+    color:{color:Clients Title Text Color};
+}
+
+.clients_box .clients .text{
+    color:{color:Clients Text Color};
+}
+
+.clients_box .owl-theme .owl-controls .owl-page span{
+    background:{color:Clients Pagination Controls Color};
+}
+
+.team_box{
+    background:{color:Team Background Color};
+}
+
+.team_box .title span{
+    background:{color:Team Background Color};
+    color:{color:Team Title Text Color};
+}
+
+.team_box .team .text{
+    color:{color:Team Title Description Color};
+}
+
+.team_members .member .details .name{
+    color:{color:Team Details Name Color};
+}
+
+.team_members .member .details .descriptions{
+    color:{color:Team Details Description Color};
+}
+
+.tweets_box{
+    background:{color:Tweets Box Background Color};
+}
+
+.tweets_box .owl-theme .owl-controls .owl-page span{
+    background:{color:Tweets Box Pagination Controls Color};
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: {color:Menu Toggle Button Bars Color};
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+	background: {color:Menu Toggle Button Hover Active Background Color};
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar{
+	background-color: {color:Menu Toggle Button Hover Active Bars Color};
+}
+        
