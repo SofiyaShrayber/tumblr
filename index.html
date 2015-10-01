@@ -82,36 +82,6 @@
 	<meta name="text:Portfolio Title" content="">
 	<meta name="text:Portfolio Title Text" content="">
 	
-	<!-- Menu -->
-	<meta name="if:Enable Menu Home Button" content="0">
-	<meta name="if:Enable Menu Pages Dropdown" content="0">
-	<meta name="if:Enable Menu Random Button" content="0">
-	<meta name="if:Enable Menu RSS Button" content="0">
-	<meta name="if:Enable Menu Ask Button" content="0">
-	<meta name="if:Enable Menu Submit Button" content="0">
-	<meta name="if:Enable Menu Categories Dropdown" content="0">
-	<meta name="if:Enable Menu Category1" content="0">
-	<meta name="if:Enable Menu Category2" content="0">
-	<meta name="if:Enable Menu Category3" content="0">
-	<meta name="if:Enable Menu Category4" content="0">
-	<meta name="if:Enable Menu Category5" content="0">
-	<meta name="if:Enable Menu Category6" content="0">
-	<meta name="if:Enable Menu Category7" content="0">
-	<meta name="if:Enable Menu Category8" content="0">
-	<meta name="if:Enable Menu Search" content="0">
-    <meta name="text:Category Link Label" content="Categories">
-    <meta name="text:Category 1" content="">
-    <meta name="text:Category 2" content="">
-    <meta name="text:Category 3" content="">
-    <meta name="text:Category 4" content="">
-    <meta name="text:Category 5" content="">
-    <meta name="text:Category 6" content="">
-    <meta name="text:Category 7" content="">
-    <meta name="text:Category 8" content="">
-    <meta name="text:Menu Search Placeholder" content="Search by tag...">
-    <meta name="text:Menu Home Text" content="Home">
-    <meta name="if:Enable Fixed Menu" content="0">
-	
 	<!-- Portfolio -->
 	<meta name="if:Grid Portfolio Layout" content="1">
 	<meta name="text:Portfolio Next Page Button Text" content="Load The Next Page">
@@ -250,29 +220,6 @@
     <!-- Colors -->
     <meta name="color:Text Color" content="#333333">
     
-    <!--<meta name="color:Slider Overlay Background Color" content="#000000">-->
-    <!--<meta name="color:Slider Arrows Color" content="#dedede">-->
-    <!--<meta name="color:Slider Arrows Shadow Color" content="#333333">-->
-    <!--<meta name="color:Slider Arrows Hover Color" content="#ffffff">-->
-    <!--<meta name="color:Slider Caption Text Color" content="#ffffff">-->
-    <!--<meta name="color:Slider Caption Border Bottom Color" content="#ffffff">-->
-    <!--<meta name="color:Slider More Button Text Color" content="#2D71B1">-->
-    <!--<meta name="color:Slider More Button Background Color" content="#E4E4E4">-->
-    <!--<meta name="color:Slider More Button Hover Background Color" content="#ffffff">-->
-    
-    <meta name="color:Menu Background Color" content="#2D71B1">
-    <meta name="color:Menu Items Border Right Color" content="#2364A2">
-    <meta name="color:Menu Items Text Color" content="#ffffff">
-    <meta name="color:Menu Items Hover Text Color" content="#3881C5">
-    <meta name="color:Menu Items Hover Background Color" content="#ffffff">
-    <meta name="color:Menu Items Active Color" content="#3881C5">
-    <meta name="color:Menu Items Active Background Color" content="#ffffff">
-    <meta name="color:Menu Items Dropdown Text Color" content="#555555">
-    <meta name="color:Menu Items Dropdown Item Hover Text Color" content="#333333">
-    <meta name="color:Menu Items Dropdown Item Hover Background Color" content="#ededed">
-    <meta name="color:Menu Toggle Button Bars Color" content="#ffffff">
-    <meta name="color:Menu Toggle Button Hover Active Background Color" content="#ffffff">
-    <meta name="color:Menu Toggle Button Hover Active Bars Color" content="#2D71B1">
     
     <meta name="color:Search Form Input Border Color" content="#ededed">
     
@@ -412,39 +359,7 @@
         	background: {color:Menu Background Color};
         }
         
-        .main_menu li{
-        	border-right: 1px solid {color:Menu Items Border Right Color};
-        }
-        
-        .main_menu li a{
-        	color: {color:Menu Items Text Color} !important;
-        }
 
-        .main_menu li a:hover{
-        	color: {color:Menu Items Hover Text Color} !important;
-        	background: {color:Menu Items Hover Background Color} !important;
-        }
-        
-        .navbar-nav>.open>a{
-        	background: {color:Menu Items Active Background Color} !important;
-        	color: {color:Menu Items Active Color} !important;
-        }
-
-        .main_menu .dropdown-menu>li>a{
-        	color: {color:Menu Items Dropdown Text Color} !important;
-        }
-        
-        .main_menu .dropdown-menu>li>a:hover{
-        	color: {color:Menu Items Dropdown Item Hover Text Color} !important;
-        	background: {color:Menu Items Dropdown Item Hover Background Color} !important;
-        }
-        
-        .search_form_menu input{
-        	border: 1px solid {color:Search Form Input Border Color};
-        }
-        
-
-        
         .call_to_action{
         	background: {color:Call To Action Background Color};
         	color: {color:Call To Action Text Color};
@@ -725,19 +640,6 @@
             background:{color:Tweets Box Pagination Controls Color};
         }
         
-        .navbar-default .navbar-toggle .icon-bar{
-        	background-color: {color:Menu Toggle Button Bars Color};
-        }
-        
-        .navbar-default .navbar-toggle:hover,
-        .navbar-default .navbar-toggle:focus{
-        	background: {color:Menu Toggle Button Hover Active Background Color};
-        }
-        
-        .navbar-default .navbar-toggle:hover .icon-bar,
-        .navbar-default .navbar-toggle:focus .icon-bar{
-        	background-color: {color:Menu Toggle Button Hover Active Bars Color};
-        }
         
 	</style>
 	
@@ -2405,23 +2307,6 @@
                 {/block:IfEnableGoogleMap}
             {/block:IndexPage}
             
-            {block:IfEnableHomepageSlider}
-                {block:IfEnableFixedMenu}
-                    $(document).scroll(function(e) {
-                        if($(this).scrollTop() > $("#maximage").height()) {
-                            if ($(".navbar").hasClass("slider_on")){
-                                $(".navbar").removeClass("slider_on");
-                            }
-                            $(".navbar").addClass("slider_off");
-                        } else {
-                            if ($(".navbar").hasClass("slider_on")){
-                                $(".navbar").addClass("slider_on");
-                            }
-                            $(".navbar").removeClass("slider_off");
-                        }
-                    });
-                {/block:IfEnableFixedMenu}
-            {/block:IfEnableHomepageSlider}
         	
         });
     </script>
