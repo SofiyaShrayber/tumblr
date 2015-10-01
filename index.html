@@ -19,26 +19,6 @@
 	<!-- Boxed Layout -->
 	<meta name="if:Enable Boxed Layout" content="0">
 	
-	<!-- Slider Options -->
-	<meta name="if:Enable Homepage Slider" content="0">
-	<meta name="image:Slider Image 1" content="">
-	<meta name="image:Slider Image 2" content="">
-	<meta name="image:Slider Image 3" content="">
-	<meta name="image:Slider Image 4" content="">
-	<meta name="image:Slider Image 5" content="">
-	<meta name="text:Slider Caption 1" content="">
-	<meta name="text:Slider Caption 2" content="">
-	<meta name="text:Slider Caption 3" content="">
-	<meta name="text:Slider Caption 4" content="">
-	<meta name="text:Slider Caption 5" content="">
-	<meta name="text:Slider Caption Description 1" content="">
-	<meta name="text:Slider Caption Description 2" content="">
-	<meta name="text:Slider Caption Description 3" content="">
-	<meta name="text:Slider Caption Description 4" content="">
-	<meta name="text:Slider Caption Description 5" content="">
-	<meta name="text:Slider Speed" content="1000">
-	<meta name="text:Slider Timeout" content="5000">
-	
 	<!-- Logo -->
 	<meta name="image:Logo" content="">
 	
@@ -270,15 +250,15 @@
     <!-- Colors -->
     <meta name="color:Text Color" content="#333333">
     
-    <meta name="color:Slider Overlay Background Color" content="#000000">
-    <meta name="color:Slider Arrows Color" content="#dedede">
-    <meta name="color:Slider Arrows Shadow Color" content="#333333">
-    <meta name="color:Slider Arrows Hover Color" content="#ffffff">
-    <meta name="color:Slider Caption Text Color" content="#ffffff">
-    <meta name="color:Slider Caption Border Bottom Color" content="#ffffff">
-    <meta name="color:Slider More Button Text Color" content="#2D71B1">
-    <meta name="color:Slider More Button Background Color" content="#E4E4E4">
-    <meta name="color:Slider More Button Hover Background Color" content="#ffffff">
+    <!--<meta name="color:Slider Overlay Background Color" content="#000000">-->
+    <!--<meta name="color:Slider Arrows Color" content="#dedede">-->
+    <!--<meta name="color:Slider Arrows Shadow Color" content="#333333">-->
+    <!--<meta name="color:Slider Arrows Hover Color" content="#ffffff">-->
+    <!--<meta name="color:Slider Caption Text Color" content="#ffffff">-->
+    <!--<meta name="color:Slider Caption Border Bottom Color" content="#ffffff">-->
+    <!--<meta name="color:Slider More Button Text Color" content="#2D71B1">-->
+    <!--<meta name="color:Slider More Button Background Color" content="#E4E4E4">-->
+    <!--<meta name="color:Slider More Button Hover Background Color" content="#ffffff">-->
     
     <meta name="color:Menu Background Color" content="#2D71B1">
     <meta name="color:Menu Items Border Right Color" content="#2364A2">
@@ -406,11 +386,10 @@
     <meta name="color:Tweets Box Pagination Controls Color" content="#ffffff">
   
 	<style type="text/css">
-		
-		#tumblr_controls {
+    	#tumblr_controls {
             display: none !important;
         }
-
+        
         .iframe_controls {
             display: none !important;
         }
@@ -423,27 +402,12 @@
         .iframe_controls .title_bar {
             display: none !important;
         }
-        
-
+        	
 	    body{
 	        color:{color:Text Color};
 	    }
 	    
-	    .slider_overlay{
-	        background:{color:Slider Overlay Background Color};
-	    }
-	
-        #arrow_left,
-        #arrow_right{
-            color:{color:Slider Arrows Color};
-            text-shadow:1px 1px {color:Slider Arrows Shadow Color};
-        }
 
-        #arrow_left:hover,
-        #arrow_right:hover{
-        	color: {color:Slider Arrows Hover Color};
-        }
-        
         .navbar{
         	background: {color:Menu Background Color};
         }
@@ -479,19 +443,7 @@
         	border: 1px solid {color:Search Form Input Border Color};
         }
         
-        .in-slide-content {
-        	color:{color:Slider Caption Text Color};
-        	border-bottom:1px solid {color:Slider Caption Border Bottom Color};
-        }
-        
-        .slider_more{
-        	background: {color:Slider More Button Background Color};
-        	color: {color:Slider More Button Text Color};
-        }
 
-        .slider_more:hover{
-        	background: {color:Slider More Button Hover Background Color};
-        }
         
         .call_to_action{
         	background: {color:Call To Action Background Color};
