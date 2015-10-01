@@ -143,6 +143,21 @@
 	<meta name="text:Team Member3 Name" content="">
 	<meta name="text:Team Member3 Description" content="">
 
+		<meta name="if:Enable The Team Member4" content="0">
+	<meta name="image:Team Member4 Image" content="">
+	<meta name="text:Team Member4 Name" content="">
+	<meta name="text:Team Member4 Description" content="">
+
+	<meta name="if:Enable The Team Member5" content="0">
+	<meta name="image:Team Member5 Image" content="">
+	<meta name="text:Team Member5 Name" content="">
+	<meta name="text:Team Member5 Description" content="">
+
+		<meta name="if:Enable The Team Member6" content="0">
+	<meta name="image:Team Member6 Image" content="">
+	<meta name="text:Team Member6 Name" content="">
+	<meta name="text:Team Member6 Description" content="">
+
 	
 	<!-- Above Tweets Parallax -->
 	<meta name="if:Enable Parallax Above Tweets" content="0">
@@ -1890,25 +1905,21 @@
 	        	{block:IndexPage}
 	        	    {block:IfEnableTheTeam}
                         <div class="container-fluid team_box">
-                            <div class="row">
+<!--                             <div class="row"> -->
                                 <div class="container">
                                     <div class="box_block team">
                                         <div class="title">
                                             <span>{text:The Team Title}</span>
                                         </div>
                                         <div class="text">{text:The Team Description}</div>
-                                        <div class="team_members{block:IfNotEnableTheTeamMember1} less{block:IfNotEnableTheTeamMember1}{block:IfNotEnableTheTeamMember2} less{block:IfNotEnableTheTeamMember2}{block:IfNotEnableTheTeamMember3} less{block:IfNotEnableTheTeamMember3}">
+                                        <div class="team_members{block:IfNotEnableTheTeamMember1} less{block:IfNotEnableTheTeamMember1}{block:IfNotEnableTheTeamMember2} less{block:IfNotEnableTheTeamMember2}{block:IfNotEnableTheTeamMember3} less{block:IfNotEnableTheTeamMember3}{block:IfNotEnableTheTeamMember4}
+                                        less{block:IfNotEnableTheTeamMember4}{block:IfNotEnableTheTeamMember5}
+                                        less{block:IfNotEnableTheTeamMember5}{block:IfNotEnableTheTeamMember6}
+                                        less{block:IfNotEnableTheTeamMember6}">
+                                        <div class="row">
                                             {block:IfEnableTheTeamMember1}
                                                 <div class="member col-md-4">
                                                     <div class="image">
-                                                        <div class="overlay">
-                                                            {block:IfEnableTheTeamMember1SocialButtons}
-                                                                <div class="btns">
-                                                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                                                </div>
-                                                            {/block:IfEnableTheTeamMember1SocialButtons}
-                                                        </div>
                                                         <img src="{image:Team Member1 Image}" alt="member" />
                                                     </div>
                                                     <div class="details">
@@ -1920,14 +1931,6 @@
                                             {block:IfEnableTheTeamMember2}
                                                 <div class="member col-md-4">
                                                     <div class="image">
-                                                        <div class="overlay">
-                                                            {block:IfEnableTheTeamMember2SocialButtons}
-                                                                <div class="btns">
-                                                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                                                </div>
-                                                            {/block:IfEnableTheTeamMember2SocialButtons}
-                                                        </div>
                                                         <img src="{image:Team Member2 Image}" alt="member" />
                                                     </div>
                                                     <div class="details">
@@ -1939,14 +1942,6 @@
                                             {block:IfEnableTheTeamMember3}
                                                 <div class="member col-md-4">
                                                     <div class="image">
-                                                        <div class="overlay">
-                                                            {block:IfEnableTheTeamMember3SocialButtons}
-                                                                <div class="btns">
-                                                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                                                </div>
-                                                            {/block:IfEnableTheTeamMember3SocialButtons}
-                                                        </div>
                                                         <img src="{image:Team Member3 Image}" alt="member" />
                                                     </div>
                                                     <div class="details">
@@ -1955,11 +1950,47 @@
                                                     </div>
                                                 </div>
                                             {/block:IfEnableTheTeamMember3}
-                                            <div class="clear"></div>
+                                        </div>
+
+										<div class="row">
+                                            {block:IfEnableTheTeamMember4}
+                                                <div class="member col-md-4">
+                                                    <div class="image">
+                                                        <img src="{image:Team Member4 Image}" alt="member" />
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="name">{text:Team Member4 Name}</div>
+                                                        <div class="description">{text:Team Member4 Description}</div>
+                                                    </div>
+                                                </div>
+                                            {/block:IfEnableTheTeamMember4}
+                                            {block:IfEnableTheTeamMember5}
+                                                <div class="member col-md-4">
+                                                    <div class="image">
+                                                        <img src="{image:Team Member5 Image}" alt="member" />
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="name">{text:Team Member5 Name}</div>
+                                                        <div class="description">{text:Team Member5 Description}</div>
+                                                    </div>
+                                                </div>
+                                            {/block:IfEnableTheTeamMember5}
+                                            {block:IfEnableTheTeamMember6}
+                                                <div class="member col-md-4">
+                                                    <div class="image">
+                                                        <img src="{image:Team Member6 Image}" alt="member" />
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="name">{text:Team Member6 Name}</div>
+                                                        <div class="description">{text:Team Member6 Description}</div>
+                                                    </div>
+                                                </div>
+                                            {/block:IfEnableTheTeamMember6}
                                         </div>
                                     </div>
                                 </div>
                             </div>
+<!--                             </div> -->
                         </div>
 	        	    {/block:IfEnableTheTeam}
 	        	{/block:IndexPage}
