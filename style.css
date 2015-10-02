@@ -285,6 +285,21 @@ div.mc-image {
 	font-size: 14px;
 }
 
+.about_us .video {
+	position: relative; 
+    height: 0; 
+    overflow: hidden;
+    padding-bottom: 56.25%; 
+}
+
+.about_us .video > iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .services .items.less,
 .team .team_members.less{
 	text-align: center;
