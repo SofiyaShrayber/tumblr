@@ -275,9 +275,14 @@ div.mc-image {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.about_us .text{
+.about_us .text {
 	text-align: center;
 	font-size: 21px;
+}
+
+.about_us .description {
+	text-align: center;
+	font-size: 14px;
 }
 
 .services .items.less,
