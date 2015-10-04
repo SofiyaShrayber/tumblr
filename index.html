@@ -429,21 +429,7 @@
             <div class="row">
             
                 {block:IndexPage}
-                    {block:IfEnableCallToAction}
-                    <div class="call_to_action">
-                        <div class="row">
-                            <div class="col-md-{block:IfEnableCallToActionButton}9{/block:IfEnableCallToActionButton}{block:IfNotEnableCallToActionButton}12{block:IfNotEnableCallToActionButton} text">
-                                {text:Call To Action Text}
-                            </div>
-                            {block:IfEnableCallToActionButton}
-                                <div class="col-md-3 button">
-                                    <a href="{text:Call To Action Button URL}" class="btn btn-primary">{text:Call To Action Button Text}</a>
-                                    <div class="clear"></div>
-                                </div>
-                            {/block:IfEnableCallToActionButton}
-                        </div>
-                    </div>
-                    {/block:IfEnableCallToAction}
+
                     
                     {block:IfEnableParallaxAboveBrief}
                         <div class="parallax_item parallax_above_brief" data-stellar-background-ratio="0.5" style="background-image: url({image:Parallax Above Brief Image});">
@@ -530,37 +516,10 @@
                     {block:IfEnableParallaxAbovePortfolio}
                         <div class="parallax_item portfolio_parallax parallax_above_portfolio" data-stellar-background-ratio="0.5" style="background-image: url({image:Parallax Above Portfolio Image});">
                             <div class="details{block:IfShowCountersOnParallaxAbovePortfolio} has_counters{/block:IfShowCountersOnParallaxAbovePortfolio}">
-                                {block:IfShowTextOnParallaxAbovePortfolio}
-                                    <div class="title">{text:Parallax Above Portfolio Title}</div>
-                                    <div class="description">{text:Parallax Above Portfolio Description}</div>
-                                {/block:IfShowTextOnParallaxAbovePortfolio}
                                 {block:IfShowCountersOnParallaxAbovePortfolio}
                                     <div class="container">
                                         <div class="counters{block:IfNotEnableCounter1OnParallaxAbovePortfolio} less{/block:IfNotEnableCounter1OnParallaxAbovePortfolio}{block:IfNotEnableCounter2OnParallaxAbovePortfolio} less{/block:IfNotEnableCounter2OnParallaxAbovePortfolio}{block:IfNotEnableCounter3OnParallaxAbovePortfolio} less{/block:IfNotEnableCounter3OnParallaxAbovePortfolio}{block:IfNotEnableCounter4OnParallaxAbovePortfolio} less{/block:IfNotEnableCounter4OnParallaxAbovePortfolio}">
-                                            {block:IfEnableCounter1OnParallaxAbovePortfolio}
-                                                <div class="counter_item col-md-3">
-                                                    <div class="num counter_item1">{text:Parallax Above Portfolio Counter1 Number}</div>
-                                                    <div class="title">{text:Parallax Above Portfolio Counter1 Title}</div>
-                                                </div>
-                                            {/block:IfEnableCounter1OnParallaxAbovePortfolio}
-                                            {block:IfEnableCounter2OnParallaxAbovePortfolio}
-                                                <div class="counter_item col-md-3">
-                                                    <div class="num counter_item2">{text:Parallax Above Portfolio Counter2 Number}</div>
-                                                    <div class="title">{text:Parallax Above Portfolio Counter2 Title}</div>
-                                                </div>
-                                            {/block:IfEnableCounter2OnParallaxAbovePortfolio}
-                                            {block:IfEnableCounter3OnParallaxAbovePortfolio}
-                                                <div class="counter_item col-md-3">
-                                                    <div class="num counter_item3">{text:Parallax Above Portfolio Counter3 Number}</div>
-                                                    <div class="title">{text:Parallax Above Portfolio Counter3 Title}</div>
-                                                </div>
-                                            {/block:IfEnableCounter3OnParallaxAbovePortfolio}
-                                            {block:IfEnableCounter4OnParallaxAbovePortfolio}
-                                                <div class="counter_item col-md-3">
-                                                    <div class="num counter_item4">{text:Parallax Above Portfolio Counter4 Number}</div>
-                                                    <div class="title">{text:Parallax Above Portfolio Counter4 Title}</div>
-                                                </div>
-                                            {/block:IfEnableCounter4OnParallaxAbovePortfolio}
+    
                                             <div class="clear"></div>
                                         </div>
                                     </div>
