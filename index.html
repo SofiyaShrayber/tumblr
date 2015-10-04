@@ -471,56 +471,10 @@
                         </div>
                     {/block:IfEnableBrief}
                     
-                    {block:IfEnableServices}
-                        <div class="container-fluid services_box">
-                            <div class="row">
-                                <div class="container">
-                                    <div class="box_block services">
-                                        <div class="title">
-                                            <span>{text:Services Title}</span>
-                                        </div>
-                                        <div class="items{block:IfNotEnableServiceItem1} less{block:IfNotEnableServiceItem1}{block:IfNotEnableServiceItem2} less{block:IfNotEnableServiceItem2}{block:IfNotEnableServiceItem3} less{block:IfNotEnableServiceItem3}">
-                                            {block:IfEnableServiceItem1}
-                                                <div class="item col-md-4">
-                                                    <div class="icon"><i class="{text:Service Item1 FA Icon}"></i></div>
-                                                    <div class="title">{text:Service Item1 Title}</div>
-                                                    <div class="text">{text:Service Item1 Text}</div>
-                                                </div>
-                                            {/block:IfEnableServiceItem1}
-                                            {block:IfEnableServiceItem2}
-                                            <div class="item col-md-4">
-                                                <div class="icon"><i class="{text:Service Item2 FA Icon}"></i></div>
-                                                <div class="title">{text:Service Item2 Title}</div>
-                                                <div class="text">{text:Service Item2 Text}</div>
-                                            </div>
-                                            {/block:IfEnableServiceItem2}
-                                            {block:IfEnableServiceItem3}
-                                            <div class="item col-md-4">
-                                                <div class="icon"><i class="{text:Service Item3 FA Icon}"></i></div>
-                                                <div class="title">{text:Service Item3 Title}</div>
-                                                <div class="text">{text:Service Item3 Text}</div>
-                                            </div>
-                                            {/block:IfEnableServiceItem3}
-                                            <div class="clear"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {/block:IfEnableServices}
                     
                     {block:IfEnableParallaxAbovePortfolio}
                         <div class="parallax_item portfolio_parallax parallax_above_portfolio" data-stellar-background-ratio="0.5" style="background-image: url({image:Parallax Above Portfolio Image});">
-                            <div class="details{block:IfShowCountersOnParallaxAbovePortfolio} has_counters{/block:IfShowCountersOnParallaxAbovePortfolio}">
-                                {block:IfShowCountersOnParallaxAbovePortfolio}
-                                    <div class="container">
-                                        <div class="counters{block:IfNotEnableCounter1OnParallaxAbovePortfolio} less{/block:IfNotEnableCounter1OnParallaxAbovePortfolio}{block:IfNotEnableCounter2OnParallaxAbovePortfolio} less{/block:IfNotEnableCounter2OnParallaxAbovePortfolio}{block:IfNotEnableCounter3OnParallaxAbovePortfolio} less{/block:IfNotEnableCounter3OnParallaxAbovePortfolio}{block:IfNotEnableCounter4OnParallaxAbovePortfolio} less{/block:IfNotEnableCounter4OnParallaxAbovePortfolio}">
-    
-                                            <div class="clear"></div>
-                                        </div>
-                                    </div>
-                                {/block:IfShowCountersOnParallaxAbovePortfolio}
-                            </div>
+                          
                         </div>
                     {/block:IfEnableParallaxAbovePortfolio}
                 {/block:IndexPage}
