@@ -50,39 +50,47 @@
 
     
     <!-- The Team -->
-    <meta name="if:Enable The Team" content="0">
-    <meta name="text:The Team Title" content="">
-    <meta name="text:The Team Description" content="">
+    <meta name="if:Enable Response Grid" content="0">
+    <meta name="text:Response Grid Title" content="">
+    <meta name="text:Response Grid Description" content="">
     
-    <meta name="if:Enable The Team Member1" content="0">
-    <meta name="image:Team Member1 Image" content="">
-    <meta name="text:Team Member1 Name" content="">
-    <meta name="text:Team Member1 Description" content="">
+    <meta name="if:Enable Response Grid Item1" content="0">
+    <meta name="image:Response Grid Item1 Image" content="">
+    <meta name="text:Response Grid Item1 Header" content="">
+    <meta name="text:Response Grid Item1 Description" content="">
 
-    <meta name="if:Enable The Team Member2" content="0">
-    <meta name="image:Team Member2 Image" content="">
-    <meta name="text:Team Member2 Name" content="">
-    <meta name="text:Team Member2 Description" content="">
+    <meta name="if:Enable Response Grid Item2" content="0">
+    <meta name="image:Response Grid Item2 Image" content="">
+    <meta name="text:Response Grid Item2 Header" content="">
+    <meta name="text:Response Grid Item2 Description" content="">
 
-    <meta name="if:Enable The Team Member3" content="0">
-    <meta name="image:Team Member3 Image" content="">
-    <meta name="text:Team Member3 Name" content="">
-    <meta name="text:Team Member3 Description" content="">
+    <meta name="if:Enable Response Grid Item3" content="0">
+    <meta name="image:Response Grid Item3 Image" content="">
+    <meta name="text:Response Grid Item3 Header" content="">
+    <meta name="text:Response Grid Item3 Description" content="">
 
-        <meta name="if:Enable The Team Member4" content="0">
-    <meta name="image:Team Member4 Image" content="">
-    <meta name="text:Team Member4 Name" content="">
-    <meta name="text:Team Member4 Description" content="">
+    <meta name="if:Enable Response Grid Item4" content="0">
+    <meta name="image:Response Grid Item4 Image" content="">
+    <meta name="text:Response Grid Item4 Header" content="">
+    <meta name="text:Response Grid Item4 Description" content="">
 
-    <meta name="if:Enable The Team Member5" content="0">
-    <meta name="image:Team Member5 Image" content="">
-    <meta name="text:Team Member5 Name" content="">
-    <meta name="text:Team Member5 Description" content="">
+    <meta name="if:Enable Response Grid Item5" content="0">
+    <meta name="image:Response Grid Item5 Image" content="">
+    <meta name="text:Response Grid Item5 Header" content="">
+    <meta name="text:Response Grid Item5 Description" content="">
 
-    <meta name="if:Enable The Team Member6" content="0">
-    <meta name="image:Team Member6 Image" content="">
-    <meta name="text:Team Member6 Name" content="">
-    <meta name="text:Team Member6 Description" content="">
+    <meta name="if:Enable Response Grid Item6" content="0">
+    <meta name="image:Response Grid Item6 Image" content="">
+    <meta name="text:Response Grid Item6 Header" content="">
+    <meta name="text:Response Grid Item6 Description" content="">
+
+    <meta name="color:Response Grid Background Color" content="#ffffff">
+    <meta name="color:Response Grid Title Text Color" content="#333333">
+    <meta name="color:Response Grid Title Description Color" content="#333333">
+    <meta name="color:Response Grid Item Header Color" content="#333333">
+    <meta name="color:Response Grid Item Description Color" content="#333333">
+    <meta name="color:Response Grid Details Color" content="#333333">
+    <meta name="color:Response Grid Item Background Color" content="#ffffff">
 
 
     
@@ -111,17 +119,6 @@
     <meta name="color:Parallax Above About Text Color" content="#ffffff">
     <meta name="color:Parallax Above Portfolio Text Color" content="#ffffff">
     <meta name="color:Parallax Above Tweets Text Color" content="#ffffff">
-    
- 
-    
-    
-    <meta name="color:Team Background Color" content="#ffffff">
-    <meta name="color:Team Title Text Color" content="#333333">
-    <meta name="color:Team Title Description Color" content="#333333">
-    <meta name="color:Team Details Name Color" content="#333333">
-    <meta name="color:Team Details Description Color" content="#333333">
-    <meta name="color:Team Member Details Background Color" content="#ffffff">
-    <meta name="color:Team Member Details Text Color" content="#333333">
     
 
     
@@ -1768,96 +1765,96 @@
                 {/block:IndexPage}
                    
                 {block:IndexPage}
-                    {block:IfEnableTheTeam}
+                    {block:IfEnableResponseGrid}
                         <div class="container-fluid team_box">
 <!--                             <div class="row"> -->
                                 <div class="container">
                                     <div class="box_block team">
                                         <div class="title">
-                                            <span>{text:The Team Title}</span>
+                                            <span>{text:Response Grid Title}</span>
                                         </div>
-                                        <div class="text">{text:The Team Description}</div>
-                                        <div class="team_members{block:IfNotEnableTheTeamMember1} less{block:IfNotEnableTheTeamMember1}{block:IfNotEnableTheTeamMember2} less{block:IfNotEnableTheTeamMember2}{block:IfNotEnableTheTeamMember3} less{block:IfNotEnableTheTeamMember3}{block:IfNotEnableTheTeamMember4}
-                                        less{block:IfNotEnableTheTeamMember4}{block:IfNotEnableTheTeamMember5}
-                                        less{block:IfNotEnableTheTeamMember5}{block:IfNotEnableTheTeamMember6}
-                                        less{block:IfNotEnableTheTeamMember6}">
+                                        <div class="text">{text:Response Grid Description}</div>
+                                        <div class="team_members{block:IfNotEnableResponseGridItem1} less{block:IfNotEnableResponseGridItem1}{block:IfNotEnableResponseGridItem2} less{block:IfNotEnableResponseGridItem2}{block:IfNotEnableResponseGridItem3} less{block:IfNotEnableResponseGridItem3}{block:IfNotEnableResponseGridItem4}
+                                        less{block:IfNotEnableResponseGridItem4}{block:IfNotEnableResponseGridItem5}
+                                        less{block:IfNotEnableResponseGridItem5}{block:IfNotEnableResponseGridItem6}
+                                        less{block:IfNotEnableResponseGridItem6}">
                                         <div class="row">
-                                            {block:IfEnableTheTeamMember1}
+                                            {block:IfEnableResponseGridItem1}
                                                 <div class="member col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Team Member1 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item1 Image}" alt="member" />
                                                     </div>
                                                     <div class="details">
-                                                        <div class="name">{text:Team Member1 Name}</div>
-                                                        <div class="description">{text:Team Member1 Description}</div>
+                                                        <div class="header">{text:Response Grid item1 Header}</div>
+                                                        <div class="description">{text:Response Grid item1 Description}</div>
                                                     </div>
                                                 </div>
-                                            {/block:IfEnableTheTeamMember1}
-                                            {block:IfEnableTheTeamMember2}
+                                            {/block:IfEnableResponseGridItem1}
+                                            {block:IfEnableResponseGridItem2}
                                                 <div class="member col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Team Member2 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item2 Image}" alt="member" />
                                                     </div>
                                                     <div class="details">
-                                                        <div class="name">{text:Team Member2 Name}</div>
-                                                        <div class="description">{text:Team Member2 Description}</div>
+                                                        <div class="header">{text:Response Grid item2 Header}</div>
+                                                        <div class="description">{text:Response Grid item2 Description}</div>
                                                     </div>
                                                 </div>
-                                            {/block:IfEnableTheTeamMember2}
-                                            {block:IfEnableTheTeamMember3}
+                                            {/block:IfEnableResponseGridItem2}
+                                            {block:IfEnableResponseGridItem3}
                                                 <div class="member col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Team Member3 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item3 Image}" alt="member" />
                                                     </div>
                                                     <div class="details">
-                                                        <div class="name">{text:Team Member3 Name}</div>
-                                                        <div class="description">{text:Team Member3 Description}</div>
+                                                        <div class="header">{text:Response Grid item3 Header}</div>
+                                                        <div class="description">{text:Response Grid item3 Description}</div>
                                                     </div>
                                                 </div>
-                                            {/block:IfEnableTheTeamMember3}
+                                            {/block:IfEnableResponseGridItem3}
                                         </div>
 
                                         <div class="row">
-                                            {block:IfEnableTheTeamMember4}
+                                            {block:IfEnableResponseGridItem4}
                                                 <div class="member col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Team Member4 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item4 Image}" alt="member" />
                                                     </div>
                                                     <div class="details">
-                                                        <div class="name">{text:Team Member4 Name}</div>
-                                                        <div class="description">{text:Team Member4 Description}</div>
+                                                        <div class="header">{text:Response Grid item4 Header}</div>
+                                                        <div class="description">{text:Response Grid item4 Description}</div>
                                                     </div>
                                                 </div>
-                                            {/block:IfEnableTheTeamMember4}
-                                            {block:IfEnableTheTeamMember5}
+                                            {/block:IfEnableResponseGridItem4}
+                                            {block:IfEnableResponseGridItem5}
                                                 <div class="member col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Team Member5 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item5 Image}" alt="member" />
                                                     </div>
                                                     <div class="details">
-                                                        <div class="name">{text:Team Member5 Name}</div>
-                                                        <div class="description">{text:Team Member5 Description}</div>
+                                                        <div class="header">{text:Response Grid item5 Header}</div>
+                                                        <div class="description">{text:Response Grid item5 Description}</div>
                                                     </div>
                                                 </div>
-                                            {/block:IfEnableTheTeamMember5}
-                                            {block:IfEnableTheTeamMember6}
+                                            {/block:IfEnableResponseGridItem5}
+                                            {block:IfEnableResponseGridItem6}
                                                 <div class="member col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Team Member6 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item6 Image}" alt="member" />
                                                     </div>
                                                     <div class="details">
-                                                        <div class="name">{text:Team Member6 Name}</div>
-                                                        <div class="description">{text:Team Member6 Description}</div>
+                                                        <div class="header">{text:Response Grid item6 Header}</div>
+                                                        <div class="description">{text:Response Grid item6 Description}</div>
                                                     </div>
                                                 </div>
-                                            {/block:IfEnableTheTeamMember6}
+                                            {/block:IfEnableResponseGridItem6}
                                         </div>
                                     </div>
                                 </div>
                             </div>
 <!--                             </div> -->
                         </div>
-                    {/block:IfEnableTheTeam}
+                    {/block:IfEnableResponseGrid}
                 {/block:IndexPage}
                 
                 {block:IndexPage}
