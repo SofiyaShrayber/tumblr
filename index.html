@@ -34,8 +34,9 @@
     <meta name="text:Brief Description2" content="">
     
     <meta name="color:Brief Background Color" content="#ffffff">
-    <meta name="color:Brief Text Color" content="#333333">
     <meta name="color:Brief Title Color" content="#333333">
+    <meta name="color:Brief Text Color" content="#333333">
+    <meta name="color:Brief Description Color" content="#333333">
     
 
     <!-- Above Portfolio Parallax -->
@@ -118,8 +119,24 @@
             color:{color:Text Color};
         }
         
+        .brief_box,
+        .brief_box .title span{
+            background:{color:Brief Background Color};
+        }
 
+        .box_block > .title span{
+            background:{color:Brief Background Color};
+            color:{color:Brief Title Color};
+        }
+
+        .box_block > .text {
+            color:{color:Brief Text Color};
+        }
         
+        .box_block > .description {
+            color:{color:Brief Text Color};
+        }
+
         .team_members .member .details{
             background: {color:Team Member Details Background Color};
             color: {color:Team Member Details Text Color};
@@ -132,15 +149,6 @@
         }
    
         
-        .about_us_box,
-        .about_us_box .title span{
-            background:{color:Brief Background Color};
-        }
-        
-        .box_block > .title span{
-            background:{color:Brief Background Color};
-            color:{color:Brief Title Color};
-        }
         
         
         .team_box{
@@ -191,10 +199,10 @@
                     {/block:IfEnableParallaxAboveBrief}
                     
                     {block:IfEnableBrief}
-                        <div class="container-fluid about_us_box">
+                        <div class="container-fluid brief_box">
                             <div class="row">
                                 <div class="container">
-                                    <div class="box_block about_us">
+                                    <div class="box_block brief_us">
                                         <div class="title">
                                             <span>{text:Brief Title}</span>
                                         </div>
