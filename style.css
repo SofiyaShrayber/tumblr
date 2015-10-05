@@ -88,11 +88,13 @@ div.mc-image {
 .brief_us .text {
 	text-align: center;
 	font-size: 21px;
+	margin-bottom: 20px;
 }
 
 .brief_us .description {
 	text-align: center;
 	font-size: 14px;
+	margin-bottom: 20px;
 }
 
 .brief_us .video {
@@ -110,6 +112,9 @@ div.mc-image {
     height: 100%;
 }
 
+.brief_us .image img {
+	margin: 0 auto;
+}
 
 .response_grid_box .text{
 	text-align: center;
