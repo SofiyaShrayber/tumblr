@@ -137,31 +137,32 @@
             color:{color:Brief Text Color};
         }
 
-        .team_members .member .details{
-            background: {color:Team Member Details Background Color};
-            color: {color:Team Member Details Text Color};
+        
+        .response_box{
+            background:{Response Grid Background Color};
+        }
+        
+        .response_box .title span{
+            background:{color:Response Grid Background Color};
+            color:{color:Response Grid Title Text Color};
+        }
+        
+        .response_box .response_grid_box .text{
+            color:{color:Response Grid Title Description Color};
+        }
+
+        .response_grid .item .details{
+            background: {color:Response Grid Item Background Color};
+            color: {color:Response Grid Details Color};
 
         }
-        
-        .team_box{
-            background:{color:Team Background Color};
+
+        .response_grid .item .details .header {
+            color:{color:Response Grid Item Header Color};
         }
         
-        .team_box .title span{
-            background:{color:Team Background Color};
-            color:{color:Team Title Text Color};
-        }
-        
-        .team_box .team .text{
-            color:{color:Team Title Description Color};
-        }
-        
-        .team_members .member .details .name{
-            color:{color:Team Details Name Color};
-        }
-        
-        .team_members .member .details .descriptions{
-            color:{color:Team Details Description Color};
+        .response_grid .item .details .description {
+            color:{color:Response Grid Item Description Color};
         }
         
         
@@ -219,7 +220,7 @@
                                             {text:Brief Text3}
                                         </div>
                                         <div class="image">
-                                            <img src="{image:Brief Image}" alt="member" />
+                                            <img src="{image:Brief Image}" alt="" />
                                         </div>
                                          <div class="description">
                                             {text:About Us Description2}
@@ -243,23 +244,23 @@
                    
                 {block:IndexPage}
                     {block:IfEnableResponseGrid}
-                        <div class="container-fluid team_box">
+                        <div class="container-fluid response_box">
 <!--                             <div class="row"> -->
                                 <div class="container">
-                                    <div class="box_block team">
+                                    <div class="box_block response_grid_box">
                                         <div class="title">
                                             <span>{text:Response Grid Title}</span>
                                         </div>
                                         <div class="text">{text:Response Grid Description}</div>
-                                        <div class="team_members{block:IfNotEnableResponseGridItem1} less{block:IfNotEnableResponseGridItem1}{block:IfNotEnableResponseGridItem2} less{block:IfNotEnableResponseGridItem2}{block:IfNotEnableResponseGridItem3} less{block:IfNotEnableResponseGridItem3}{block:IfNotEnableResponseGridItem4}
+                                        <div class="response_grid{block:IfNotEnableResponseGridItem1} less{block:IfNotEnableResponseGridItem1}{block:IfNotEnableResponseGridItem2} less{block:IfNotEnableResponseGridItem2}{block:IfNotEnableResponseGridItem3} less{block:IfNotEnableResponseGridItem3}{block:IfNotEnableResponseGridItem4}
                                         less{block:IfNotEnableResponseGridItem4}{block:IfNotEnableResponseGridItem5}
                                         less{block:IfNotEnableResponseGridItem5}{block:IfNotEnableResponseGridItem6}
                                         less{block:IfNotEnableResponseGridItem6}">
                                         <div class="row">
                                             {block:IfEnableResponseGridItem1}
-                                                <div class="member col-md-4">
+                                                <div class="item col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Response Grid item1 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item1 Image}" alt="item" />
                                                     </div>
                                                     <div class="details">
                                                         <div class="header">{text:Response Grid item1 Header}</div>
@@ -268,9 +269,9 @@
                                                 </div>
                                             {/block:IfEnableResponseGridItem1}
                                             {block:IfEnableResponseGridItem2}
-                                                <div class="member col-md-4">
+                                                <div class="item col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Response Grid item2 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item2 Image}" alt="item" />
                                                     </div>
                                                     <div class="details">
                                                         <div class="header">{text:Response Grid item2 Header}</div>
@@ -279,9 +280,9 @@
                                                 </div>
                                             {/block:IfEnableResponseGridItem2}
                                             {block:IfEnableResponseGridItem3}
-                                                <div class="member col-md-4">
+                                                <div class="item col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Response Grid item3 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item3 Image}" alt="item" />
                                                     </div>
                                                     <div class="details">
                                                         <div class="header">{text:Response Grid item3 Header}</div>
@@ -293,9 +294,9 @@
 
                                         <div class="row">
                                             {block:IfEnableResponseGridItem4}
-                                                <div class="member col-md-4">
+                                                <div class="item col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Response Grid item4 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item4 Image}" alt="item" />
                                                     </div>
                                                     <div class="details">
                                                         <div class="header">{text:Response Grid item4 Header}</div>
@@ -304,9 +305,9 @@
                                                 </div>
                                             {/block:IfEnableResponseGridItem4}
                                             {block:IfEnableResponseGridItem5}
-                                                <div class="member col-md-4">
+                                                <div class="item col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Response Grid item5 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item5 Image}" alt="item" />
                                                     </div>
                                                     <div class="details">
                                                         <div class="header">{text:Response Grid item5 Header}</div>
@@ -315,9 +316,9 @@
                                                 </div>
                                             {/block:IfEnableResponseGridItem5}
                                             {block:IfEnableResponseGridItem6}
-                                                <div class="member col-md-4">
+                                                <div class="item col-md-4">
                                                     <div class="image">
-                                                        <img src="{image:Response Grid item6 Image}" alt="member" />
+                                                        <img src="{image:Response Grid item6 Image}" alt="item" />
                                                     </div>
                                                     <div class="details">
                                                         <div class="header">{text:Response Grid item6 Header}</div>
